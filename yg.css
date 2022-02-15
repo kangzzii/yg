@@ -1,0 +1,189 @@
+*{margin:0 auto; padding:0; list-style:none;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;}
+a{text-decoration: none;color: inherit;}
+#wrap{width: 100vmin;height: 1000px;}
+header{width: 100vmin;height: 10vmin;
+    display: flex;flex-wrap: wrap;}
+.langu{width: 100vmin;;border-top: solid 1px;}
+.lang{width: 32vmin;height: 2vmin;float: right;}
+.lang>li{width: 8vmin;
+    line-height: 2vmin;
+    font-size: 1.3vmin;
+    text-align: center;
+    font-weight: bold;
+    color: gray;
+    float: left}
+.lang>li:hover{color: #333;cursor: pointer;}
+.logo{width: 35vmin;height:8vmin ;}
+.nav{width: 65vmin;height: 8vmin;}
+.topmenu{display: flex;}
+.topmenu>li{line-height: 8.1vmin;
+    font-size: 1.8vmin;
+    text-align: center;
+    font-weight: bold;}
+.topmenu>li:hover{color: #880000; cursor: pointer;}
+/* 이미지슬라이드 */
+#imgslide{width: 100vmin;height: 45vmin;position: relative;
+    margin-top: 2vmin;overflow: hidden;}
+.imgbox{width: 500vmin;height: 45vmin;position: absolute;
+    display: flex;}
+.imgbox>img{width: 100%;height: 100%;position: absolute}
+.dot{position: absolute;z-index:1000;
+    width: 5vmin;height: 1vmin;
+    bottom: 1vmin;left: 8%;
+    background-color: rgba(255, 255, 255, 0.438);
+    display: flex;width: 20vmin;font-size: 2vmin;}
+.dot li{width: 5vmin;
+        border-right:solid 1px lightgray;}
+.dot li:last-child{border: none;}
+.dotimg{position: absolute;
+    left:-40vmin;top:-43vmin;display: none;}
+.dot li:hover .dotimg{display: block;}
+.dot li:hover{cursor: pointer;}
+.dot2>li{width: 4vmin;height: 1vmin;background-color: #880000;}
+.dot2{position: absolute;z-index:999;font-size: 2vmin;
+    bottom: 1vmin;left: 8.2%;
+    animation: dot 20s  alternate infinite;}
+    @keyframes dot{
+        from{transform: translateX()}
+        30%{transform: translateX(3vmin);}
+        50%{transform: translateX(7vmin);}
+        80%{transform: translateX(11vmin);}
+        to{transform: translateX(15vmin);}
+    }
+.imgbox>li{ animation: slide 20s  alternate infinite;}
+    @keyframes slide{
+        0%{transform: translateX()}
+        30%{transform: translateX(-100vmin);}
+        50%{transform: translateX(-200vmin);}
+        80%{transform: translateX(-300vmin);}
+        100%{transform: translateX(-400vmin);}
+    }
+/* 하단 게시물박스 */
+section{width: 100vmin;height: 25vmin;
+    display: flex;flex-wrap: wrap;}
+.box{width: 24.2vmin;height: 19vmin;
+    margin-right: 0.5vmin;
+    margin-top: 2.5vmin;
+    background-color: #eee}
+.title{width: 23vmin;height: 5vmin;
+    display: flex;
+    border-bottom: solid white 2px;}
+.t1{font-size: 1.7vmin;
+    font-weight: bold;
+    margin-left:2vmin;
+    line-height: 5vmin;}
+.t2{font-size: 1.2vmin;
+    position: relative; right: -1vmin; bottom: -1vmin;
+    line-height: 5vmin;}
+.t2:hover{cursor: pointer;}
+.content{width: 19.5vmin;height: 13vmin;}
+.content_m{width: 19.5vmin;height: 2.5vmin;
+    background-color: black;color: white;}
+.content_m>li{width:9.75vmin ;
+            font-size: 1.5vmin;
+            line-height:2.6vmin ;
+            text-align: center;
+            float: left;}
+.content_m>li:hover{cursor: pointer;}
+.content_m>li:nth-child(2){background-color: gray;}
+.content_m>li:nth-child(2):hover{background-color: black;}
+.content_t{width: 19.5vmin;height: 5vmin;
+    position: relative;
+    border-bottom: grey 1px solid;
+    box-shadow: 0 1px 1px white;}
+.t3{font-size: 1.4vmin;float: left;
+    color: #707070;
+    margin-top: 0.5vmin;}
+.t4{font-size: 1.3vmin;color: #afafaf;position: absolute;
+    right: 0;bottom: 0;}
+.t3:hover{text-decoration: underline; cursor: pointer;}
+.content_v{width: 22vmin;height: 10vmin;
+    margin-top: 2vmin;
+    display: flex;}
+.c_video{width: 13vmin;height: 10vmin;overflow: hidden;}
+.c_text{width: 9vmin;height: 10vmin;}
+.t5{font-size: 1.6vmin;
+    color: #333;
+    font-weight: bold;
+    margin-left: 0.5vmin;}
+.t6{font-size: 1.4vmin;
+    margin:1vmin 0 0 0.5vmin;
+    color:#afafaf ;}
+/* 하단부 바로가기 */
+#bt_section{width: 100vmin;height: 13vmin;
+            border-bottom-left-radius:15px ;
+            border-bottom-right-radius:15px ;
+            box-shadow: 1px 1px 3px lightgray;}
+.box2{width: 99.6vmin;height: 12.6vmin;
+    background:linear-gradient(#fff,#eee);
+    position: relative;top:0.3vmin;
+    display: flex;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:15px ;}
+.box3{width: 24.5vmin;height: 12vmin;
+    display: flex;
+    border-right: #e6e6e6 1px solid;}
+.box3:nth-child(4){border: none;}
+.text{width: 15vmin;height: 12vmin;
+    font-weight: bold;}
+.t7{font-size: 1.5vmin;color: gray;
+    margin-left: 1vmin;margin-top: 1vmin;}
+.t8{font-size: 1.4vmin;color: rgb(56, 49, 49);
+    margin-left: 1vmin;margin-top: 1vmin;}
+.t9{font-size: 1.3vmin;
+    position: absolute;
+    top: 10vmin;
+    margin-left: 1vmin;
+    display: flex;
+    color: gray;}
+.bt{width: 1.5vmin;height: 1.5vmin;
+    margin-left: 0.5vmin;
+    color: gray;
+    text-align: center;
+    font-size: 1.5vmin;line-height: 1.5vmin;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px;}
+.imgs{width: 10.5vmin;height: 12vmin;}
+.imgs>img{width: 90%;position: relative;top: 10%;left: 50%;transform: translateX(-50%);}
+/* sns */
+#sns{width: 51vmin;
+    height: 8vmin;
+    position: relative;
+    display: flex;
+    float: right;}
+.sns_t{width: 25vmin;height: 8vmin;
+    line-height: 10vmin;
+    font-size: 1.2vmin; color: grey;}
+.icon{width: 22vmin;height: 8vmin;
+    margin-left: 1vmin;
+    display: flex;}
+.iconbox{width: 3.5vmin;height: 3.5vmin;
+    position: relative;
+    overflow: hidden;
+    filter: grayscale(100);
+    margin-top: 2vmin;
+    border-radius: 50%;}
+.iconbox>img{width: 120%;
+    position: relative;
+    top:-8%;
+    left: 50%;transform: translateX(-50%);}
+.iconbox:hover{filter: grayscale(0);cursor: pointer;}
+/* 푸터 */
+footer{width: 100vmin;height: 8vmin;
+    border-top: 1px grey solid;
+    display: flex;}
+#f_logo{width: 45vmin;height: 8vmin;display: flex;}
+.f1{margin: 2vmin 0 0 0;}
+.f2{margin-top: 2vmin;font-size: 1vmin;color:grey}
+#f_menu{width: 55vmin;height: 8vmin;}
+.f3{width: 55vmin;height: 4vmin;}
+.f3_menu{display: flex;font-weight: bold;
+    font-size: 1.3vmin;line-height:4vmin;}
+.f3_menu>li{display: flex;}
+.recruit{background-color: #860000;color:white;font-size: 1.2vmin;}
+.f4{width: 55vmin;height: 4vmin;}
+.select{width: 20vmin; float: right; margin-top: 1.3vmin;
+        background-color: gray;color: white;}
